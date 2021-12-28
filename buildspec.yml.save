@@ -2,7 +2,7 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
+i    runtime-versions:
       java: corretto11
   pre_build:
     commands:
@@ -14,7 +14,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-artifacts:
-  files:
-    - '**/*'
-
