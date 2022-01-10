@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/pipeline
+hooks:
+  BeforeInstall:
+    - location: prog1.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: prog2.sh
+      timeout: 180
